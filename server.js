@@ -14,5 +14,7 @@ await connectDb()
 app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)
 
-
+app.get('/', (req, res) => {
+    res.send("Hello world")
+})
 app.listen(PORT, () => console.log("Server running on port: " + PORT))

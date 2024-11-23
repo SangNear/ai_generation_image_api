@@ -15,6 +15,6 @@ app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)
 
 app.get('/', (req, res) => {
-    res.send("Hello world")
+    res.json("Hello world from api")
 })
 app.listen(PORT, () => console.log("Server running on port: " + PORT))
